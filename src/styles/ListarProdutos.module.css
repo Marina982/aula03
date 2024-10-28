@@ -1,0 +1,31 @@
+.blocoLista{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    color: black;
+    justify-content: center;
+}
+
+.card{
+ height: 500px;
+ width: 300px;
+}
+
+ .blocoLista img {
+    width: 200px;
+    height: 200px;
+ }
+
+ .blocoLista p {
+    flex-wrap: wrap;
+    width: 225px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .Title{
+   display: flex;
+   justify-content: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }

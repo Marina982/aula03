@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ListarProdutos from "../components/ListarProdutos";
+import styles from '../styles/ListarProdutos.module.css'
 
 export default function Home() {
     const [listar, setListar] = useState([]);
@@ -19,7 +20,7 @@ export default function Home() {
 
     return (
         <div>
-            <h1>Lista Produtos</h1>
+            <h1 className={styles.Title} >Lista Produtos</h1>
             <ListarProdutos listaProdutos={listar} />
         </div>
     );
