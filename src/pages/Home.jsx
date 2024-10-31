@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import ListarProdutos from "../components/ListarProdutos";
 import styles from '../styles/ListarProdutos.module.css'
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Home() {
     const [listar, setListar] = useState([]);
@@ -20,8 +22,9 @@ export default function Home() {
 
     return (
         <div>
-            <h1 className={styles.Title} >Lista Produtos</h1>
+             <Header/>
             <ListarProdutos listaProdutos={listar} />
+            <Footer/>
         </div>
     );
 }
