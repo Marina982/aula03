@@ -31,12 +31,17 @@ export default function Home() {
     }
 
 
-const PrecoMaior = () => {
-    const listaOrdenada = [...listar].sort((a, b) => b.price.localeCompare(a < b));
-    setListar(listaOrdenada);
-}
+    const PrecoMaior = () => {
+        const listaOrdenada = [...listar].sort((a, b) => b.price - a.price);
+        setListar(listaOrdenada);
+    }
 
 
+    const PrecoMenor = () => {
+        const listaOrdenada = [...listar].sort((a, b) => a.price - b.price);
+        setListar(listaOrdenada);
+    }
+    
 
     const buscarProdutos = (termo) => {
         setPesquisa(termo);
@@ -57,7 +62,9 @@ const PrecoMaior = () => {
             />
             <button onClick={() => orderAZ()}>Filtro a AZ</button>
             <button onClick={() => orderZA()}>Filtro a ZA</button>
-            <button onClick={() => PrecoMaior()}>Filtro Preço</button>
+            <button onClick={() => PrecoMaior()}>Filtro Preço Maior</button>
+            <button onClick={() => PrecoMenor()}>Filtro Preço Menor</button>
+
             <ListarProdutos listaProdutos={listar} />
             <Footer/>
         </div>
