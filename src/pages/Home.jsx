@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ListarProdutos from "../components/ListarProdutos";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import styles from '../styles/Header.module.css'
 
 export default function Home() {
     const [listar, setListar] = useState([]);
@@ -59,12 +60,12 @@ export default function Home() {
             <input 
                 placeholder="Pesquisar" 
                 onChange={(event) => buscarProdutos(event.target.value)}
-            />
-            <button onClick={() => orderAZ()}>Filtro a AZ</button>
-            <button onClick={() => orderZA()}>Filtro a ZA</button>
-            <button onClick={() => PrecoMaior()}>Filtro Preço Maior</button>
-            <button onClick={() => PrecoMenor()}>Filtro Preço Menor</button>
-
+            className={styles.BarradeNavegacaos}/>
+            <button onClick={() => orderAZ()} className={styles.botoes}>Filtro a AZ</button>
+            <button onClick={() => orderZA()} className={styles.botoes}>Filtro a ZA</button>
+            <button onClick={() => PrecoMaior()} className={styles.botoes}>Filtro Preço Maior</button>
+            <button onClick={() => PrecoMenor()} className={styles.botoes}>Filtro Preço Menor</button>
+            
             <ListarProdutos listaProdutos={listar} />
             <Footer/>
         </div>
