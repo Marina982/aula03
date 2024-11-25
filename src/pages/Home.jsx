@@ -61,6 +61,7 @@ export default function Home() {
                 placeholder="Pesquisar" 
                 onChange={(event) => buscarProdutos(event.target.value)}
             className={styles.BarradeNavegacaos}/>
+            
             <button onClick={() => orderAZ()} className={styles.botoes}>Filtro a AZ</button>
             <button onClick={() => orderZA()} className={styles.botoes}>Filtro a ZA</button>
             <button onClick={() => PrecoMaior()} className={styles.botoes}>Filtro Preço Maior</button>
