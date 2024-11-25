@@ -6,7 +6,7 @@ import styles from '../styles/Header.module.css'
 
 export default function Home() {
     const [listar, setListar] = useState([]);
-    const [pesquisa, setPesquisa] = useState('');
+    const [pesquisa, setPesquisa] = useState([]);
 
     useEffect(() => {
         const lista = async () => {
