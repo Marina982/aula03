@@ -1,4 +1,4 @@
-body{
+body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -34,4 +34,26 @@ body{
     padding: 10px; 
     top: -65px;
     position: relative;
+}
+
+.botoes {
+    background-color: #000000; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    border-style: solid rgb(77, 77, 77);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.botoes:hover {
+    background-color: #292929;
+    transform: scale(1.05); 
 }

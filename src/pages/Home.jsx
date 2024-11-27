@@ -55,7 +55,7 @@ export default function Home() {
         <div>
             <Header/>
             <input 
-                placeholder="Pesquisar" 
+                placeholder="Pesquisar..." 
                 onChange={(event) => buscarProdutos(event.target.value)}
                 className={styles.BarradeNavegacaos}
             />
