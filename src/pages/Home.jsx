@@ -43,10 +43,10 @@ export default function Home() {
         setListar(listaOrdenada);
     }
 
-    const buscarProdutos = (termo) => {
-        setPesquisa(termo);
+    const buscarProdutos = (dados) => {
+        setPesquisa(dados);
         const produtosFiltrados = produtos.filter(produto => 
-            produto.title.toLowerCase().includes(termo.toLowerCase())
+            produto.title.toLowerCase().includes(dados.toLowerCase())
         );
         setListar(produtosFiltrados);
     }
